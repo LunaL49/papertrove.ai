@@ -32,7 +32,7 @@ export default function Submit({
             checked={confirm}
             onChange={() => handleToggle()}
           />
-          Got it, I'm ready to receive my personalised research digests.
+          Got it, I am ready to receive my personalised research digests.
         </label>
       </div>
 

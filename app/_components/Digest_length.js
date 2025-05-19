@@ -18,7 +18,7 @@ export default function Digest_length({
           Maximum number of research articles per digest?
         </h2>
         <p className="text-sm font-normal mb-6 text-gray-500">
-          There may be fewer if there aren't enough sufficiently relevant
+          There may be fewer if there are not enough sufficiently relevant
           articles published since the last digest.
         </p>
       </div>

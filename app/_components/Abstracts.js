@@ -47,7 +47,7 @@ Second paper abstract on new line
             checked={existingUser}
             onChange={() => handleToggle()}
           />
-          Leave blank if: I'm updating my preferences as an existing user, keep
+          Leave blank if: I am updating my preferences as an existing user, keep
           this the same as before. (Do not check this box if you are a new
           user!)
         </label>

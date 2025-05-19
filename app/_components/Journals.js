@@ -217,7 +217,7 @@ export default function Journals({ handleNext, handlePrev, handleChange }) {
               checked={checkedJournals.other}
               onChange={() => handleCheck("other")}
             />
-            All other journals within the algorithm's scope
+            All other journals within the scope of the algorithm
           </label>
         </div>
       </div>

@@ -55,7 +55,7 @@ export default function Form_cover({ handleNext }) {
           transition={{ delay: 3 }}
           className="text-[18px] mb-8 text-gray-700 justify-center"
         >
-          And it's free! All you need to do is fill out one tiny form, so...
+          And it is free! All you need to do is fill out one tiny form, so...
         </motion.div>
       </div>
 
@@ -67,7 +67,7 @@ export default function Form_cover({ handleNext }) {
           onClick={handleNext}
           className="bg-[#0fa3b1] text-white text-[18px] px-6 py-2 rounded shadow-md origin-top-left transition-transform duration-200 hover:scale-105 active:scale-95"
         >
-          Let's start! (Works best on a computer.)
+          Let us start! (Works best on a computer.)
         </motion.button>
       </div>
     </>
