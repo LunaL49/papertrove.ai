@@ -24,8 +24,8 @@ export default function Abstracts({ handleNext, handlePrev, handleChange }) {
         </p>
         <p className="text-sm font-normal mb-4 text-gray-500">
           Formatting (strictly required): titles on new line beginning with
-          "&gt;", abstracts on new line. The ▶ arrow will be greyed out until at
-          least 2000 characters have been entered.
+          &quot;&gt;&quot;, abstracts on new line. The ▶ arrow will be greyed
+          out until at least 2000 characters have been entered.
         </p>
       </div>
 
