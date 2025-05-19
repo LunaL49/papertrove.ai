@@ -13,15 +13,19 @@ export default function Abstracts({ handleNext, handlePrev, handleChange }) {
   return (
     <>
       <div>
-        <h2 className="text-xl font-bold text-gray-700">
+        <h2 className="text-xl font-bold mb-1 text-gray-700">
           Last thing, paste the titles and abstracts of the research papers
           indicative of your interests.
         </h2>
-        <p className="text-sm font-normal mb-4 text-gray-500">
+        <p className="text-sm font-normal mb-1 text-gray-500">
           The ML algorithm will use this information to tailor its
-          recommendation to you. At least 5 papers is recommended, 10 is
-          optimal. Please follow the indicated formatting. The ▶ arrow will be
-          greyed out until at least 2000 characters have been entered.
+          recommendation to you. Enter at least 5 papers, 10 optimal, input
+          capped at 20000 characters.
+        </p>
+        <p className="text-sm font-normal mb-4 text-gray-500">
+          Formatting (strictly required): titles on new line beginning with
+          "&gt;", abstracts on new line. The ▶ arrow will be greyed out until at
+          least 2000 characters have been entered.
         </p>
       </div>
 
@@ -31,11 +35,12 @@ export default function Abstracts({ handleNext, handlePrev, handleChange }) {
 First paper abstract on new line
 >Second paper title
 Second paper abstract on new line
+>Third paper title
 ...`}
           maxLength={20000}
           value={text}
           onChange={(e) => setText(e.target.value)}
-          rows={4}
+          rows={6}
           className="w-full px-4 py-3 mb-2 rounded-lg shadow-xl border-2 border-gray-300 focus:outline-none focus:border-[#0fa3b1] transition-all duration-300 ease-in-out"
         />
       </div>
