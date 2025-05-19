@@ -14,7 +14,7 @@ import Submit from "./Submit";
 
 export default function Form() {
   const router = useRouter();
-  const [step, setStep] = useState(5);
+  const [step, setStep] = useState(0);
   const [formData, setFormData] = useState({
     email: "",
     journals: "",
