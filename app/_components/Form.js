@@ -6,7 +6,6 @@ import { supabase } from "../_lib/supabase";
 
 import Form_cover from "./Form_cover";
 import Email from "./Email";
-import Journals from "./Journals";
 import Frequency from "./Frequency";
 import Digest_length from "./Digest_length";
 import Abstracts from "./Abstracts";
@@ -17,7 +16,6 @@ export default function Form() {
   const [step, setStep] = useState(0);
   const [formData, setFormData] = useState({
     email: "",
-    journals: "",
     frequency: "",
     digest_length: 5,
     abstracts: "",
@@ -51,7 +49,6 @@ export default function Form() {
       setSubmit(true);
       setFormData({
         email: "",
-        journals: "",
         frequency: "",
         digest_length: 5,
         abstracts: "",
@@ -75,15 +72,7 @@ export default function Form() {
         />
       </div>
 
-      <div className={step === 2 ? "overflow-auto" : "hidden"}>
-        <Journals
-          handleNext={handleNext}
-          handlePrev={handlePrev}
-          handleChange={handleChange}
-        />
-      </div>
-
-      <div className={step === 3 ? "" : "hidden"}>
+      <div className={step === 2 ? "" : "hidden"}>
         <Frequency
           handleNext={handleNext}
           handlePrev={handlePrev}
@@ -91,7 +80,7 @@ export default function Form() {
         />
       </div>
 
-      <div className={step === 4 ? "" : "hidden"}>
+      <div className={step === 3 ? "" : "hidden"}>
         <Digest_length
           handleNext={handleNext}
           handlePrev={handlePrev}
@@ -99,7 +88,7 @@ export default function Form() {
         />
       </div>
 
-      <div className={step === 5 ? "overflow-auto" : "hidden"}>
+      <div className={step === 4 ? "overflow-auto" : "hidden"}>
         <Abstracts
           handleNext={handleNext}
           handlePrev={handlePrev}
@@ -107,7 +96,7 @@ export default function Form() {
         />
       </div>
 
-      <div className={step === 6 ? "" : "hidden"}>
+      <div className={step === 5 ? "" : "hidden"}>
         <Submit handlePrev={handlePrev} handleSubmit={handleSubmit} />
       </div>
     </div>
