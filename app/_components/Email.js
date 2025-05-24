@@ -17,9 +17,14 @@ export default function Email({
   return (
     <>
       <div>
-        <h2 className="text-xl font-bold text-gray-700">Your email address?</h2>
+        <h2 className="text-xl font-bold text-gray-700 mb-2">
+          Your email address? This is where you will receive your research
+          digests.
+        </h2>
         <p className="text-sm mb-6 font-normal text-gray-500">
-          This is where you will receive your research digests.
+          Use a personal email like gmail, work/university emails have very
+          stringent filtering policies which are difficult to get around. From
+          there, you can choose to set up email forwarding to your work email.
         </p>
       </div>
       <div>
