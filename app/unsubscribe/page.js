@@ -21,7 +21,7 @@ export default function Unsubscribe() {
 
   const handleConfirm = async (e) => {
     e.preventDefault();
-    const { error } = await supabase.from("unsubscribe").insert({ email });
+    const { error } = await supabase.from("users").delete().eq("email", email);
 
     if (error) {
       console.error("Submission error:", error);
@@ -49,10 +49,6 @@ export default function Unsubscribe() {
               onChange={(e) => handleEmail(e.target.value)}
               className="w-full px-4 py-2 rounded-lg shadow-xl border-b-2 border-b-gray-700 focus:outline-none focus:border-b-2 focus:border-b-[#0fa3b1] transition-all duration-300 ease-in-out transform focus:scale-105 origin-top"
             />
-          </div>
-
-          <div className="text-sm text-gray-500 mb-8 w-2/3">
-            It may take up to 24hrs for unsubscibing to come into effect.
           </div>
 
           <button

@@ -93,6 +93,7 @@ export default function Form() {
           handleNext={handleNext}
           handlePrev={handlePrev}
           handleChange={handleChange}
+          formData={formData}
         />
       </div>
 

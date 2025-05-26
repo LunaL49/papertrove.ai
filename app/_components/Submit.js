@@ -1,11 +1,6 @@
 import { useState } from "react";
 
-export default function Submit({
-  handleNext,
-  handlePrev,
-  handleSubmit,
-  submit,
-}) {
+export default function Submit({ handlePrev, handleSubmit }) {
   const [confirm, setConfirm] = useState(false);
 
   const handleToggle = () => setConfirm(!confirm);
