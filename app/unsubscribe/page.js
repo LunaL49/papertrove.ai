@@ -51,6 +51,8 @@ export default function Unsubscribe() {
             />
           </div>
 
+          <div className="mb-6" />
+
           <button
             onClick={handleConfirm}
             disabled={!isEmailValid}
