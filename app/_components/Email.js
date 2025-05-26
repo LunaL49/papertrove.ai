@@ -22,15 +22,18 @@ export default function Email({
           digests.
         </h2>
         <p className="text-sm mb-6 font-normal text-gray-500">
-          Use a personal email like gmail, work/university emails have very
-          stringent filtering policies which are difficult to get around. From
-          there, you can choose to set up email forwarding to your work email.
+          Please use a{" "}
+          <span className="text-[#f7a072] font-bold">
+            personal email like gmail
+          </span>
+          , work/university emails have very stringent filtering policies which
+          are difficult to get around.
         </p>
       </div>
       <div>
         <input
           type="email"
-          placeholder="me@something.com"
+          placeholder="me@gmail.com"
           maxLength={50}
           value={formData.email}
           onChange={(e) => handleChange("email", e.target.value)}
