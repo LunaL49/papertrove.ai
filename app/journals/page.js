@@ -152,6 +152,38 @@ export default function Journals() {
             <p className="text-sm mb-2 font-normal text-gray-500">
               Scientific Reports
             </p>
+            <p className="text-sm mb-2 font-normal text-gray-500">Cell</p>
+            <p className="text-sm mb-2 font-normal text-gray-500">
+              Cancer Cell
+            </p>
+            <p className="text-sm mb-2 font-normal text-gray-500">
+              Cell Metabolism
+            </p>
+            <p className="text-sm mb-2 font-normal text-gray-500">
+              Cell Genomics
+            </p>
+            <p className="text-sm mb-2 font-normal text-gray-500">
+              Cell Chemical Biology
+            </p>
+            <p className="text-sm mb-2 font-normal text-gray-500">
+              Cell Reports
+            </p>
+            <p className="text-sm mb-2 font-normal text-gray-500">
+              Cell Systems
+            </p>
+            <p className="text-sm mb-2 font-normal text-gray-500">
+              Current Biology
+            </p>
+            <p className="text-sm mb-2 font-normal text-gray-500">
+              Developmental Cell
+            </p>
+            <p className="text-sm mb-2 font-normal text-gray-500">
+              Molecular Cell
+            </p>
+            <p className="text-sm mb-2 font-normal text-gray-500">Neuron</p>
+            <p className="text-sm mb-2 font-normal text-gray-500">
+              Proceedings of the National Academy of Science
+            </p>
           </div>
         </div>
       </div>
